@@ -207,7 +207,7 @@ export default function Index() {
             icon={<IconPrompt />}
             label="Random Creativity Prompt"
             subtext="Tap to reveal a new idea."
-            gradient="bg-gradient-peach"
+            gradient="url(https://cdn.builder.io/api/v1/image/assets%2Fbf29734f12f74dae8834c2d0533c98b3%2F2bf3095d55914a059b22fd616e6546e2)"
             onRefresh={handlePromptClick}
             onClick={handlePromptClick}
             className="cursor-pointer hover:shadow-lg md:col-span-1 md:row-span-1"
