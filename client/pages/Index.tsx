@@ -58,6 +58,21 @@ const CHALLENGES = [
   "List 5 ideas as fast as possible.",
   "Write a micro-story in one sentence.",
   "Draw something without lifting your finger.",
+  "Sketch an object using only straight lines.",
+  "Write a tagline that starts with the words 'What if…'",
+  "Redesign a social media icon in the style of ancient symbols.",
+  "List 10 words that describe your creative mood right now.",
+  "Draw a character using one continuous line without lifting your hand.",
+  "Write a 6-word story that includes the word 'spark.'",
+  "Invent a product that fits entirely inside a matchbox.",
+  "Describe your dream workspace in three sentences.",
+  "Pick a color and design a mini world inspired by only that color.",
+  "Create a micro-pattern using three simple shapes.",
+  "List 5 'forbidden' ideas — things you normally wouldn't let yourself try.",
+  "Redesign a calendar for an alien species.",
+  "Write a super-short pep talk to future you.",
+  "Break an object into its simplest visual components — then rearrange them.",
+  "Invent a mascot for your current creative project.",
 ];
 
 const QUOTES = [
