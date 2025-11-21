@@ -72,25 +72,28 @@ export const BentoTile = React.forwardRef<HTMLDivElement, BentoTileProps>(
           {onRefresh && (
             <button
               onClick={onRefresh}
-              className="w-7 h-7 rounded-full bg-white/30 hover:bg-white/50 flex items-center justify-center transition-colors duration-200 text-neutral-600 hover:text-neutral-800 flex-shrink-0"
+              className="w-9 h-9 rounded-full bg-white/40 hover:bg-white/70 flex items-center justify-center transition-colors duration-200 text-neutral-700 hover:text-neutral-900 flex-shrink-0"
               title="Refresh"
             >
               <svg
-                className="w-3 h-3 stroke-current stroke-[2.5]"
+                className="w-5 h-5"
                 viewBox="0 0 24 24"
                 fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
               >
                 <path
-                  d="M1 4v6h6M23 20v-6h-6"
-                  stroke="currentColor"
-                  strokeWidth="2"
+                  d="M23 4v6h-6"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
-                  d="M20.754 5.145A9 9 0 005.794 19"
-                  stroke="currentColor"
-                  strokeWidth="2"
+                  d="M1 20v-6h6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M3.51 9a9 9 0 0 1 14.85-3.36M20.49 15a9 9 0 0 1-14.85 3.36"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
