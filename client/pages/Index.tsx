@@ -358,7 +358,12 @@ export default function Index() {
               onClick={() => setIsBrainDumpOpen(true)}
               className="flex-grow flex items-center justify-center"
             >
-              <div className="px-4 py-3 bg-white/40 hover:bg-white/60 text-neutral-800 rounded-full text-sm md:text-base font-light transition-colors">
+              <div
+                className="px-4 py-3 bg-white/40 hover:bg-white/60 text-neutral-800 rounded-full text-sm md:text-base font-light transition-colors"
+                style={{
+                  fontFamily: "Amarante, display",
+                }}
+              >
                 Open Brain Dump
               </div>
             </button>
