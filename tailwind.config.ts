@@ -57,11 +57,27 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        tile: {
+          peach: "hsl(var(--tile-peach))",
+          blue: "hsl(var(--tile-blue))",
+          green: "hsl(var(--tile-green))",
+          lavender: "hsl(var(--tile-lavender))",
+          pink: "hsl(var(--tile-pink))",
+          yellow: "hsl(var(--tile-yellow))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-peach": "linear-gradient(135deg, hsl(var(--tile-peach)) 0%, rgba(255, 255, 255, 0.8) 100%)",
+        "gradient-blue": "linear-gradient(135deg, hsl(var(--tile-blue)) 0%, rgba(255, 255, 255, 0.8) 100%)",
+        "gradient-green": "linear-gradient(135deg, hsl(var(--tile-green)) 0%, rgba(255, 255, 255, 0.8) 100%)",
+        "gradient-lavender": "linear-gradient(135deg, hsl(var(--tile-lavender)) 0%, rgba(255, 255, 255, 0.8) 100%)",
+        "gradient-pink": "linear-gradient(135deg, hsl(var(--tile-pink)) 0%, rgba(255, 255, 255, 0.8) 100%)",
+        "gradient-yellow": "linear-gradient(135deg, hsl(var(--tile-yellow)) 0%, rgba(255, 255, 255, 0.8) 100%)",
       },
       keyframes: {
         "accordion-down": {
@@ -80,10 +96,19 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          from: {
+            opacity: "0",
+          },
+          to: {
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.3s ease-out",
       },
     },
   },
