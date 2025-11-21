@@ -246,17 +246,35 @@ export default function Index() {
                     .padStart(2, "0")}
                   :{(timerSeconds % 60).toString().padStart(2, "0")}
                 </div>
-                <p className="text-sm md:text-base font-light text-neutral-700 text-center max-w-xs">
+                <p className="text-xs md:text-sm font-light text-neutral-700 text-center max-w-xs">
                   {currentResetSuggestion}
                 </p>
-                {!isTimerRunning && timerSeconds === 60 && (
-                  <button
-                    onClick={handleResetClick}
-                    className="px-4 py-2 mt-2 bg-white/40 hover:bg-white/60 text-neutral-800 rounded-full text-sm font-light transition-colors"
-                  >
-                    Start Again
-                  </button>
-                )}
+                <div className="flex gap-3 mt-2">
+                  {!isTimerRunning && timerSeconds > 0 && (
+                    <button
+                      onClick={() => setIsTimerRunning(true)}
+                      className="px-4 py-2 bg-white/40 hover:bg-white/60 text-neutral-800 rounded-full text-xs md:text-sm font-light transition-colors"
+                    >
+                      Start
+                    </button>
+                  )}
+                  {isTimerRunning && (
+                    <button
+                      onClick={() => setIsTimerRunning(false)}
+                      className="px-4 py-2 bg-white/40 hover:bg-white/60 text-neutral-800 rounded-full text-xs md:text-sm font-light transition-colors"
+                    >
+                      Pause
+                    </button>
+                  )}
+                  {!isTimerRunning && timerSeconds === 60 && (
+                    <button
+                      onClick={handleResetClick}
+                      className="px-4 py-2 bg-white/40 hover:bg-white/60 text-neutral-800 rounded-full text-xs md:text-sm font-light transition-colors"
+                    >
+                      Start Again
+                    </button>
+                  )}
+                </div>
               </div>
             )}
             {!isTimerVisible && (
