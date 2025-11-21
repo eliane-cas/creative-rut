@@ -342,7 +342,7 @@ export default function Index() {
             icon={<IconChallenge />}
             label="Quick Challenge"
             subtext="Click to get a challenge."
-            gradient="bg-gradient-pink"
+            gradient="url(https://cdn.builder.io/api/v1/image/assets%2Fbf29734f12f74dae8834c2d0533c98b3%2F3c40bf9c2a4e40a4ab1b723663dc6050)"
             onRefresh={handleChallengeClick}
             className="cursor-pointer hover:shadow-lg md:col-span-1 md:row-span-1"
           >
