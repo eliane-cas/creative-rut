@@ -262,7 +262,7 @@ export default function Index() {
             icon={<IconReset />}
             label="1-Minute Reset"
             subtext="Click to start a 1-minute refresh."
-            gradient="bg-gradient-green"
+            gradient="url(https://cdn.builder.io/api/v1/image/assets%2Fbf29734f12f74dae8834c2d0533c98b3%2F2e5b16a4f79641fcb8586f5df7d860cb)"
             onRefresh={handleResetClick}
             className="cursor-pointer hover:shadow-lg md:col-span-1 md:row-span-1"
           >
