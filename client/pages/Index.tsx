@@ -417,8 +417,30 @@ export default function Index() {
           >
             <div className="flex-grow flex items-center justify-center min-h-[120px]">
               {quote && (
-                <p className="text-2xl md:text-3xl font-light text-neutral-800 text-center leading-relaxed animate-fade-in">
-                  "{quote}"
+                <p
+                  className="animate-fade-in"
+                  style={{
+                    animationDuration: "0.3s",
+                    animationTimingFunction: "ease-out",
+                    color: "rgb(38, 38, 38)",
+                    fontSize: "30px",
+                    fontWeight: "300",
+                    lineHeight: "36px",
+                    textAlign: "center",
+                    margin: "0",
+                  }}
+                >
+                  "
+                  <div
+                    style={{
+                      fontFamily: "Amaranth, sans-serif",
+                      color: "rgba(124, 52, 51, 1)",
+                      display: "inline",
+                    }}
+                  >
+                    {quote}
+                  </div>
+                  "
                 </p>
               )}
             </div>
