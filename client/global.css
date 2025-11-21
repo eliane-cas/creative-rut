@@ -61,25 +61,13 @@
   }
 }
 
-/* Noise/grain texture overlay */
+/* Page background */
 @layer base {
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background-image:
-      repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 2px,
-        rgba(255, 255, 255, 0.03) 2px,
-        rgba(255, 255, 255, 0.03) 4px
-      );
-    z-index: 1;
+  html {
+    background-image: url(https://cdn.builder.io/api/v1/image/assets%2Fbf29734f12f74dae8834c2d0533c98b3%2F2d4fa59f0d804d74aa748f36c63862bd);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
