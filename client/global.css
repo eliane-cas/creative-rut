@@ -77,7 +77,11 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    background-image: url(https://cdn.builder.io/api/v1/image/assets%2Fbf29734f12f74dae8834c2d0533c98b3%2F2d4fa59f0d804d74aa748f36c63862bd);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
     font-weight: 300;
   }
 
