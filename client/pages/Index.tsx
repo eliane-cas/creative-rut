@@ -213,6 +213,13 @@ export default function Index() {
         >
           Get Rid of Your Creative Rut
         </h1>
+        <div className="flex items-center justify-center mb-6">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fbf29734f12f74dae8834c2d0533c98b3%2F4ec97ff81ad64eae9385352408f33367?format=webp&width=200"
+            alt="Sparkles"
+            className="w-12 h-12 md:w-16 md:h-16"
+          />
+        </div>
         <p
           className="max-w-[1151px] mx-auto"
           style={{
