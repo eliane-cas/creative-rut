@@ -384,7 +384,21 @@ export default function Index() {
                 </p>
               )}
               {!challenge && (
-                <p className="text-base md:text-lg font-light text-neutral-500 text-center italic">
+                <p
+                  style={{
+                    color: "rgba(74, 74, 74, 1)",
+                    borderRadius: "20px",
+                    overflow: "hidden",
+                    marginLeft: "2px",
+                    padding: "6px 12px",
+                    fontFamily: "Amarante, display",
+                    fontSize: "18px",
+                    fontWeight: "300",
+                    lineHeight: "28px",
+                    border: "1px solid rgba(74, 74, 74, 1)",
+                    margin: "0",
+                  }}
+                >
                   Click to reveal
                 </p>
               )}
