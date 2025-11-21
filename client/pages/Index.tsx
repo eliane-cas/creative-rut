@@ -324,30 +324,78 @@ export default function Index() {
                 >
                   {currentResetSuggestion}
                 </p>
-                <div className="flex gap-3 mt-2">
+                <div className="flex gap-3 mt-2" style={{ display: "flex", fontWeight: "300", gap: "12px", marginTop: "16px" }}>
                   {!isTimerRunning && timerSeconds > 0 && (
-                    <button
+                    <div
                       onClick={() => setIsTimerRunning(true)}
-                      className="px-4 py-2 bg-white/40 hover:bg-white/60 text-neutral-800 rounded-full text-xs md:text-sm font-light transition-colors"
+                      style={{
+                        backgroundColor: "rgba(255, 255, 255, 0.4)",
+                        borderRadius: "9999px",
+                        color: "rgb(38, 38, 38)",
+                        display: "block",
+                        transitionDuration: "0.15s",
+                        transitionProperty:
+                          "color, background-color, border-color, text-decoration-color, fill, stroke",
+                        transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                        borderColor: "rgba(0, 0, 0, 0)",
+                        padding: "8px 16px",
+                        fontFamily: "Amarante, display",
+                        fontSize: "14px",
+                        fontWeight: "300",
+                        lineHeight: "20px",
+                        cursor: "pointer",
+                      }}
                     >
                       Start
-                    </button>
+                    </div>
                   )}
                   {isTimerRunning && (
-                    <button
+                    <div
                       onClick={() => setIsTimerRunning(false)}
-                      className="px-4 py-2 bg-white/40 hover:bg-white/60 text-neutral-800 rounded-full text-xs md:text-sm font-light transition-colors"
+                      style={{
+                        backgroundColor: "rgba(255, 255, 255, 0.4)",
+                        borderRadius: "9999px",
+                        color: "rgb(38, 38, 38)",
+                        display: "block",
+                        transitionDuration: "0.15s",
+                        transitionProperty:
+                          "color, background-color, border-color, text-decoration-color, fill, stroke",
+                        transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                        borderColor: "rgba(0, 0, 0, 0)",
+                        padding: "8px 16px",
+                        fontFamily: "Amarante, display",
+                        fontSize: "14px",
+                        fontWeight: "300",
+                        lineHeight: "20px",
+                        cursor: "pointer",
+                      }}
                     >
                       Pause
-                    </button>
+                    </div>
                   )}
                   {!isTimerRunning && timerSeconds === 60 && (
-                    <button
+                    <div
                       onClick={handleResetClick}
-                      className="px-4 py-2 bg-white/40 hover:bg-white/60 text-neutral-800 rounded-full text-xs md:text-sm font-light transition-colors"
+                      style={{
+                        backgroundColor: "rgba(255, 255, 255, 0.4)",
+                        borderRadius: "9999px",
+                        color: "rgb(38, 38, 38)",
+                        display: "block",
+                        transitionDuration: "0.15s",
+                        transitionProperty:
+                          "color, background-color, border-color, text-decoration-color, fill, stroke",
+                        transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                        borderColor: "rgba(0, 0, 0, 0)",
+                        padding: "8px 16px",
+                        fontFamily: "Amarante, display",
+                        fontSize: "14px",
+                        fontWeight: "300",
+                        lineHeight: "20px",
+                        cursor: "pointer",
+                      }}
                     >
                       Start Again
-                    </button>
+                    </div>
                   )}
                 </div>
               </div>
