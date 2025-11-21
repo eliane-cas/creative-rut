@@ -296,13 +296,32 @@ export default function Index() {
           >
             {isTimerVisible && (
               <div className="flex-grow flex flex-col items-center justify-center space-y-4">
-                <div className="text-5xl md:text-6xl font-light text-neutral-800 tabular-nums">
+                <div
+                  style={{
+                    color: "rgb(38, 38, 38)",
+                    fontVariantNumeric: "tabular-nums",
+                    font: "tabular-nums 300 38px/60px Roboto, sans-serif",
+                  }}
+                >
                   {Math.floor(timerSeconds / 60)
                     .toString()
                     .padStart(2, "0")}
                   :{(timerSeconds % 60).toString().padStart(2, "0")}
                 </div>
-                <p className="text-xs md:text-sm font-light text-neutral-700 text-center max-w-xs">
+                <p
+                  style={{
+                    color: "rgba(0, 0, 0, 1)",
+                    marginTop: "16px",
+                    maxWidth: "320px",
+                    textAlign: "center",
+                    fontFamily: "Amarante, display",
+                    fontSize: "16px",
+                    fontWeight: "500",
+                    lineHeight: "20px",
+                    margin: "0",
+                    marginTop: "16px",
+                  }}
+                >
                   {currentResetSuggestion}
                 </p>
                 <div className="flex gap-3 mt-2">
