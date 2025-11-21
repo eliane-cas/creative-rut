@@ -32,13 +32,18 @@ export const BentoTile = React.forwardRef<HTMLDivElement, BentoTileProps>(
         data-tile={dataId}
         className={cn(
           "relative flex flex-col h-full",
-          "bg-gradient-to-br p-6 md:p-8",
-          "rounded-[28px] border-2 border-neutral-300/40",
+          "p-8 rounded-[28px]",
           "shadow-sm hover:shadow-md transition-shadow duration-300",
           "overflow-hidden",
-          gradient,
           className
         )}
+        style={{
+          backgroundImage: gradient,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          border: "1.63934px solid rgba(0, 0, 0, 0.81)",
+        }}
       >
         {/* Icon, title, and refresh button row */}
         <div className="flex items-start justify-between mb-4 gap-3">
