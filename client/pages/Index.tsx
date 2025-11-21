@@ -369,7 +369,7 @@ export default function Index() {
             icon={<IconQuote />}
             label="Motivational Quote"
             subtext=""
-            gradient="bg-gradient-yellow"
+            gradient="url(https://cdn.builder.io/api/v1/image/assets%2Fbf29734f12f74dae8834c2d0533c98b3%2F508dcba25eb24a6f92b23a4fd0c15b68)"
             onRefresh={handleQuoteRefresh}
             className="cursor-pointer hover:shadow-lg md:col-span-1 md:row-span-1"
           >
