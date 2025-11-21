@@ -40,19 +40,29 @@ export const BentoTile = React.forwardRef<HTMLDivElement, BentoTileProps>(
           className
         )}
       >
-        {/* Icon and refresh button row */}
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex-shrink-0 text-neutral-500 opacity-70">
-            {icon}
+        {/* Icon, title, and refresh button row */}
+        <div className="flex items-start justify-between mb-4 gap-3">
+          <div className="flex items-start gap-3 flex-grow">
+            <div className="flex-shrink-0 text-neutral-500 opacity-70 mt-0.5">
+              {icon}
+            </div>
+            <div className="flex-grow min-w-0">
+              <h3 className="text-sm md:text-base font-light text-neutral-800 leading-tight">
+                {label}
+              </h3>
+              <p className="text-xs font-light text-neutral-600 mt-0.5">
+                {subtext}
+              </p>
+            </div>
           </div>
           {onRefresh && (
             <button
               onClick={onRefresh}
-              className="w-8 h-8 rounded-full bg-white/30 hover:bg-white/50 flex items-center justify-center transition-colors duration-200 text-neutral-600 hover:text-neutral-800 flex-shrink-0"
+              className="w-7 h-7 rounded-full bg-white/30 hover:bg-white/50 flex items-center justify-center transition-colors duration-200 text-neutral-600 hover:text-neutral-800 flex-shrink-0"
               title="Refresh"
             >
               <svg
-                className="w-4 h-4 stroke-current stroke-[2.5]"
+                className="w-3 h-3 stroke-current stroke-[2.5]"
                 viewBox="0 0 24 24"
                 fill="none"
               >
@@ -73,16 +83,6 @@ export const BentoTile = React.forwardRef<HTMLDivElement, BentoTileProps>(
               </svg>
             </button>
           )}
-        </div>
-
-        {/* Title and subtitle */}
-        <div className="mb-4 flex-shrink-0">
-          <h3 className="text-lg md:text-xl font-light text-neutral-800 mb-1">
-            {label}
-          </h3>
-          <p className="text-xs md:text-sm font-light text-neutral-600">
-            {subtext}
-          </p>
         </div>
 
         {/* Content area - grows to fill available space */}
