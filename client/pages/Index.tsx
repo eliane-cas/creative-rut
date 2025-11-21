@@ -323,7 +323,7 @@ export default function Index() {
             icon={<IconDump />}
             label="Brain Dump"
             subtext="Empty your mind of all that clutter."
-            gradient="bg-gradient-lavender"
+            gradient="url(https://cdn.builder.io/api/v1/image/assets%2Fbf29734f12f74dae8834c2d0533c98b3%2Fd1df6814818d4513837c654c59fa74fe)"
             className="cursor-pointer hover:shadow-lg md:col-span-1 md:row-span-1"
           >
             <button
