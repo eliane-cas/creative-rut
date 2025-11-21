@@ -52,9 +52,18 @@ export const BentoTile = React.forwardRef<HTMLDivElement, BentoTileProps>(
               {icon}
             </div>
             <div className="flex-grow min-w-0">
-              <h3 className="text-sm md:text-base font-light text-neutral-800 leading-tight">
+              <p
+                className="text-sm md:text-base leading-tight"
+                style={{
+                  color: "rgba(0, 0, 0, 1)",
+                  fontFamily: "Amarante, display",
+                  fontSize: "18px",
+                  fontWeight: "500",
+                  margin: "0",
+                }}
+              >
                 {label}
-              </h3>
+              </p>
               <p className="text-xs font-light text-neutral-600 mt-0.5">
                 {subtext}
               </p>
