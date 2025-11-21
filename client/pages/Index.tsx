@@ -235,7 +235,7 @@ export default function Index() {
             icon={<IconPerspective />}
             label="Perspective Shifter"
             subtext="See your problem differently."
-            gradient="bg-gradient-blue"
+            gradient="url(https://cdn.builder.io/api/v1/image/assets%2Fbf29734f12f74dae8834c2d0533c98b3%2F66326389df294d7f8c2f8c3b6d012aa5)"
             onRefresh={handlePerspectiveClick}
             className="cursor-pointer hover:shadow-lg md:col-span-1 md:row-span-1"
           >
