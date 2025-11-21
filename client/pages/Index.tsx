@@ -13,6 +13,21 @@ const PROMPTS = [
   "Turn a boring object into a hero.",
   "Design something intentionally ugly — then fix it.",
   "Redesign your morning routine as an app.",
+  "Design an object that only works at night.",
+  "Turn a common household item into a mythical artifact.",
+  "Invent a product that solves a problem you didn't know you had.",
+  "Visualize what your favorite sound would look like if it had shape and texture.",
+  "Create a character whose personality is based on a type of weather.",
+  "Redesign a classic fairy tale in a futuristic setting.",
+  "Draw or describe an emotion using only geometric shapes.",
+  "Transform your current mood into a landscape.",
+  "Imagine a tool used by time travelers — what does it look like?",
+  "Reimagine a logo using only handwritten elements.",
+  "Invent a creature that lives inside your phone.",
+  "Take your favorite food and design a product inspired by it.",
+  "Create an 'anti-product' — something that intentionally doesn't work properly.",
+  "Turn a boring form or questionnaire into an engaging, magical experience.",
+  "Design something that would comfort a stressed-out version of you.",
 ];
 
 const PERSPECTIVES = [
