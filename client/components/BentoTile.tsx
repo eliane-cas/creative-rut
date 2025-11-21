@@ -9,7 +9,6 @@ export interface BentoTileProps {
   gradient: string;
   children?: ReactNode;
   onRefresh?: () => void;
-  onClick?: () => void;
   className?: string;
 }
 
